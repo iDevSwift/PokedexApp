@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EE8356452D3EE0B200DD0765 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE83563F2D3EE0B200DD0765 /* Preview Assets.xcassets */; };
+		EE8356462D3EE0B200DD0765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8356412D3EE0B200DD0765 /* Assets.xcassets */; };
+		EE8356472D3EE0B200DD0765 /* PokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8356422D3EE0B200DD0765 /* PokedexView.swift */; };
+		EE8356482D3EE0B200DD0765 /* PokedexAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8356432D3EE0B200DD0765 /* PokedexAppApp.swift */; };
+		EE83564B2D3EE18300DD0765 /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = EE83564A2D3EE18300DD0765 /* pokemons.json */; };
+		EE83564E2D3EE1C000DD0765 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83564D2D3EE1C000DD0765 /* Model.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EE83562E2D3EE0A200DD0765 /* PokedexApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokedexApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE83563F2D3EE0B200DD0765 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE8356412D3EE0B200DD0765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE8356422D3EE0B200DD0765 /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
+		EE8356432D3EE0B200DD0765 /* PokedexAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexAppApp.swift; sourceTree = "<group>"; };
+		EE83564A2D3EE18300DD0765 /* pokemons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pokemons.json; sourceTree = "<group>"; };
+		EE83564D2D3EE1C000DD0765 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		EE8356302D3EE0A200DD0765 /* PokedexApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PokedexApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EE83562B2D3EE0A200DD0765 /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		EE8356252D3EE0A200DD0765 = {
 			isa = PBXGroup;
 			children = (
-				EE8356302D3EE0A200DD0765 /* PokedexApp */,
+				EE8356442D3EE0B200DD0765 /* PokedexApp */,
 				EE83562F2D3EE0A200DD0765 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,43 @@
 				EE83562E2D3EE0A200DD0765 /* PokedexApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EE8356402D3EE0B200DD0765 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE83563F2D3EE0B200DD0765 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE8356442D3EE0B200DD0765 /* PokedexApp */ = {
+			isa = PBXGroup;
+			children = (
+				EE8356422D3EE0B200DD0765 /* PokedexView.swift */,
+				EE83564C2D3EE19C00DD0765 /* ModelView */,
+				EE8356402D3EE0B200DD0765 /* Preview Content */,
+				EE8356412D3EE0B200DD0765 /* Assets.xcassets */,
+				EE8356432D3EE0B200DD0765 /* PokedexAppApp.swift */,
+				EE8356492D3EE10B00DD0765 /* Resources */,
+			);
+			path = PokedexApp;
+			sourceTree = "<group>";
+		};
+		EE8356492D3EE10B00DD0765 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE83564A2D3EE18300DD0765 /* pokemons.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE83564C2D3EE19C00DD0765 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				EE83564D2D3EE1C000DD0765 /* Model.swift */,
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +103,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				EE8356302D3EE0A200DD0765 /* PokedexApp */,
 			);
 			name = PokedexApp;
 			packageProductDependencies = (
@@ -109,6 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE83564B2D3EE18300DD0765 /* pokemons.json in Resources */,
+				EE8356452D3EE0B200DD0765 /* Preview Assets.xcassets in Resources */,
+				EE8356462D3EE0B200DD0765 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE83564E2D3EE1C000DD0765 /* Model.swift in Sources */,
+				EE8356472D3EE0B200DD0765 /* PokedexView.swift in Sources */,
+				EE8356482D3EE0B200DD0765 /* PokedexAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +305,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -267,6 +314,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iDevSwift.PokedexApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,8 +338,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +347,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = iDevSwift.PokedexApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
