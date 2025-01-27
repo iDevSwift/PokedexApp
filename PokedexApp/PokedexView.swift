@@ -19,7 +19,11 @@ struct PokedexView: View {
 //            .toolbarBackgroundVisibility(.visible, for: .navigationBar)
 //            .toolbarBackground(Color.blue.opacity(0.4), for: .navigationBar)
             .toolbar {
-                ButtonInformationView().padding(40)
+                HStack {
+                    ButtonInformationView()
+                }
+                .position(x: 5, y: 25)
+                .padding(.trailing).padding(30)
             }
         }
     }
