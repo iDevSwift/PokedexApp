@@ -9,40 +9,17 @@ import SwiftUI
 
 struct PokedexView: View {
     let pokemons = getPokemons()
+    @State private var showInspector = false
     var body: some View {
         NavigationStack {
             List(pokemons) { pokemon in
-                HStack {
-                    AsyncImage(url: pokemon.imageURL) { image in
-                        image
-                            .scaledToFit()
-                            .imageScale(.small)
-                            .frame(width: 50, height: 50)
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    VStack(alignment: .leading){
-                        Text(pokemon.name)
-                            .font(.title3)
-                            .bold()
-                            .foregroundStyle(.blue)
-                        Text(pokemon.type.formatted(.list(type: .and)))
-                            .font(.callout)
-                            .foregroundStyle(.black)
-                    }
-                }
+                PokemonCell(pokemon: pokemon) // Hacemos una inyeccion de dependencia de la componentización del HStack. *17/10
             }
-            .navigationTitle("Pokémon List")
-            .toolbarBackgroundVisibility(.visible, for: .navigationBar)
-            .toolbarBackground(Color.blue.opacity(0.4), for: .navigationBar)
+            .navigationTitle("Pokedex List")
+//            .toolbarBackgroundVisibility(.visible, for: .navigationBar)
+//            .toolbarBackground(Color.blue.opacity(0.4), for: .navigationBar)
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                    } label: {
-                        Image(systemName: "bubble.left.and.exclamationmark.bubble.right.fill")
-                    }
-                    .foregroundColor(.black)
-                }
+                ButtonInformationView().padding(40)
             }
         }
     }
@@ -51,3 +28,5 @@ struct PokedexView: View {
 #Preview {
     PokedexView()
 }
+
+
