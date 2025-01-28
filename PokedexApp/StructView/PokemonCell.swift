@@ -10,14 +10,7 @@ struct PokemonCell: View {
     let pokemon: Pokemon // Tenemos que hacer esta inyección de dependencia de Pokemon para que funcione la modularización del HStack.
     var body: some View {
         HStack {
-            AsyncImage(url: pokemon.imageURL) { image in
-                image
-                    .scaledToFit()
-                    .imageScale(.small)
-                    .frame(width: 50, height: 50)
-            } placeholder: {
-                ProgressView()
-            }
+            PokemonImage(url: pokemon.imageURL)
             VStack(alignment: .leading){
                 Text(pokemon.name)
                     .font(.title3)
