@@ -4,8 +4,6 @@
 //
 //  Created by Diego Maseda Fernández on 28/1/25.
 //
-
-/// Aqui lo que hacemos es generarnos un `struct` donde vamos a modularizar la imagen de los pokemons para componentizarla (igual que los PokemonCell)
 import SwiftUI
 struct PokemonImage: View {
     let url: URL?

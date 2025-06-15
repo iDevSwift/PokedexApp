@@ -17,6 +17,7 @@
 		EE83564B2D3EE18300DD0765 /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = EE83564A2D3EE18300DD0765 /* pokemons.json */; };
 		EE83564E2D3EE1C000DD0765 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83564D2D3EE1C000DD0765 /* Model.swift */; };
 		EEBE4D7D2D496DBE00688403 /* PokemonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE4D7C2D496DBE00688403 /* PokemonImage.swift */; };
+		EEF875252DFF76F000D93C89 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF875242DFF76F000D93C89 /* PokemonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EE83564A2D3EE18300DD0765 /* pokemons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pokemons.json; sourceTree = "<group>"; };
 		EE83564D2D3EE1C000DD0765 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EEBE4D7C2D496DBE00688403 /* PokemonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImage.swift; sourceTree = "<group>"; };
+		EEF875242DFF76F000D93C89 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				EE83564D2D3EE1C000DD0765 /* Model.swift */,
+				EEF875242DFF76F000D93C89 /* PokemonDetailView.swift */,
 				EE719FAB2D48022F00D2DE22 /* PokemonCell.swift */,
 				EEBE4D7C2D496DBE00688403 /* PokemonImage.swift */,
 				EE719FAF2D480A8400D2DE22 /* ButtonInformationView.swift */,
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE719FAE2D4803DC00D2DE22 /* PreviewData.swift in Sources */,
+				EEF875252DFF76F000D93C89 /* PokemonDetailView.swift in Sources */,
 				EE83564E2D3EE1C000DD0765 /* Model.swift in Sources */,
 				EEBE4D7D2D496DBE00688403 /* PokemonImage.swift in Sources */,
 				EE719FAC2D48022F00D2DE22 /* PokemonCell.swift in Sources */,

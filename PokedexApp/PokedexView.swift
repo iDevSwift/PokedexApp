@@ -10,20 +10,37 @@ import SwiftUI
 struct PokedexView: View {
     let pokemons = getPokemons()
     @State private var showInspector = false
+    @State private var showDetails = false
+    let columns = [GridItem(.flexible()), GridItem(.flexible())]
+
     var body: some View {
         NavigationStack {
-            List(pokemons) { pokemon in
-                PokemonCell(pokemon: pokemon) // Hacemos una inyeccion de dependencia de la componentización del HStack. *17/10
-            }
-            .navigationTitle("Pokedex List")
-//            .toolbarBackgroundVisibility(.visible, for: .navigationBar)
-//            .toolbarBackground(Color.blue.opacity(0.4), for: .navigationBar)
-            .toolbar {
-                ButtonInformationView().padding(40)
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(pokemons) { pokemon in
+                        VStack {
+                            PokemonCell(pokemon: pokemon)
+                            Button {
+                                showDetails.toggle()
+                            } label: {
+                                Text("View Details")
+                            }
+                            .popover(isPresented: $showDetails) {
+                                PokemonDetailView(pokemon: .preview)
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .clipShape(.capsule)
+                                
+                        }
+                        .padding()
+                    }
+                    }
+                }
+                .padding()
+                .navigationTitle("Pokedex")
             }
         }
     }
-}
 
 #Preview {
     PokedexView()

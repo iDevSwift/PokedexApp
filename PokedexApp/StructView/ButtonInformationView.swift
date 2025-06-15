@@ -4,7 +4,6 @@
 //
 //  Created by Diego Maseda on 27/1/25.
 //
-
 import SwiftUI
 struct ButtonInformationView: View {
     @State private var showInspector = false

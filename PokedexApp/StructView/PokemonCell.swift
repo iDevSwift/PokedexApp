@@ -5,22 +5,22 @@
 //  Created by Diego Maseda on 27/1/25.
 //
 import SwiftUI
-
 struct PokemonCell: View {
-    let pokemon: Pokemon // Tenemos que hacer esta inyección de dependencia de Pokemon para que funcione la modularización del HStack.
+    let pokemon: Pokemon
+    
     var body: some View {
-        HStack {
+        VStack {
             PokemonImage(url: pokemon.imageURL)
-            VStack(alignment: .leading){
-                Text(pokemon.name)
-                    .font(.title3)
-                    .bold()
-                    .foregroundStyle(.blue)
-                Text(pokemon.type.formatted(.list(type: .and)))
-                    .font(.callout)
-                    .foregroundStyle(.black)
-            }
+                .scaledToFit()
+                .frame(height: 100)
+            Text(pokemon.name)
+                .font(.headline)
+            Text(pokemon.type.formatted(.list(type: .and)))
+                .font(.subheadline)
+                .foregroundColor(.gray)
+                .lineLimit(1)
         }
+        .padding()
     }
 }
 
